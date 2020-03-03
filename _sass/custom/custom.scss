@@ -1,0 +1,55 @@
+$green: #50d435;
+$light-green: #67ea4b;
+$light-grey: #f5f5f5;
+$dark-grey: #7d7d7d;
+
+$body-background-color: white;
+$sidebar-color: $light-grey;
+$search-background-color: white;
+$table-background-color: white;
+$code-background-color: lightgrey;
+
+$body-text-color: black;
+$body-heading-color: black;
+$search-result-preview-color: black;
+$nav-child-link-color: $green;
+$link-color: $green;
+$btn-primary-color: $green;
+$base-button-color: $light-grey;
+
+body {
+    > div.page-wrap{
+        top: 48px;
+        bottom: 0;
+        height: auto;
+    }
+
+    h1, h2, h3{
+        font-family: bree;
+        font-weight: 400;
+    }
+
+}
+
+.side-bar{
+    .site-header > a, .site-footer{
+        display: none;
+        visibility: hidden;
+    }
+
+    .site-header{
+        background: $light-green;
+        .menu-button{
+            color: white
+        }
+    }
+}
+
+@media (min-width: 50rem){
+    .side-bar{
+        .site-header{
+            display: none;
+            visibility: hidden;
+        }
+    }
+}
